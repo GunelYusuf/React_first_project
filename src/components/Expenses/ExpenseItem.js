@@ -1,12 +1,12 @@
-import ExpenceDate from './ExpenceDate';
-import './ExpenceItem.css'
+import React,{useState}  from 'react';
+import ExpenseDate from './ExpenseDate';
 import Card from '../UI/Card';
-import React {useState} from 'react';
+import './ExpenseItem.css';
 
-
-const ExcpenceItem=(props) => {
+const ExpenseItem =(props) => {
   // function clickHandler() {}
  const [title,setTitle]= useState(props.title);
+ console.log('ExpenseItem evaluted by React');
 
 
    const clickHandler= ()=>{
@@ -16,7 +16,7 @@ const ExcpenceItem=(props) => {
      return(
       
        <Card className='expense-item'>
-         <ExpenceDate date={props.date}/>
+         <ExpenseDate date={props.date}/>
         <div className='expense-item__description'><br />
             <h2>{title}</h2>
             <div className='expense-item__price'>$ {props.price}</div>
@@ -28,4 +28,4 @@ const ExcpenceItem=(props) => {
     
 
 
-export default ExcpenceItem;
+export default ExpenseItem;
