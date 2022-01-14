@@ -7,25 +7,25 @@ function App() {
       id:'e1',
       title:'Toilet Paper',
       price:94.12,
-      date:new Date(2022,01,14),
+      date:new Date(2022/01/14),
     },
     {
       id:'e2',
       title:'New Tv',
       price:799.49,
-      date:new Date(2022,01,10),
+      date:new Date(2021,01,10),
     },
     {
       id:'e3',
       title:'Car Insuance',
       price:294.67,
-      date:new Date(2022,01,11),
+      date:new Date(2020,01,11),
     },
     {
       id:'e4',
       title:'New Desk (Wooden)',
       price:1007.97,
-      date:new Date(2022,01,14),
+      date:new Date(2021,01,14),
     }
   ]
   return (
